@@ -9,7 +9,7 @@ Although Jekyll is supposed to make writing blogs easier and more straight-forwa
 
 I tried using
 
-{% highlight md %}
+{% highlight liquid %}
 ```css
 .selector {
   display: none;
@@ -26,15 +26,15 @@ kramdown:
 
 But that put my fenced codeblocks simply in a `code` tag. This doesn't help with highlighting, so I wasn't happy.
 
-The real solution is to not try to use GFM and do it with [rouge](http://rouge.jneen.net). For that to work locally you need to make sure you've got that gem installed (`gem install rouge`), and then in your `_config.yml` put:
+The real solution is to not try to use GFM and do it with [rouge](http://rouge.jneen.net) or [pygments](http://pygments.org). For that to work locally you need to make sure you've got that gem installed (`gem install rouge`), and then in your `_config.yml` put:
 
 {% highlight yaml %}
-highlighter: rouge
+highlighter: pygments
 {% endhighlight %}
 
 After that you can highlight your code blocks with the rouge filter:
 
-{% highlight md %}
+{% highlight liquid %}
 {% raw %}
 {% highlight yaml %}
 kramdown:
