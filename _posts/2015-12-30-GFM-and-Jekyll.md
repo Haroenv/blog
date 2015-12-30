@@ -9,7 +9,7 @@ Although Jekyll is supposed to make writing blogs easier and more straight-forwa
 
 I tried using
 
-{% highlight markdown %}
+{% highlight md %}
 ```css
 .selector {
   display: none;
