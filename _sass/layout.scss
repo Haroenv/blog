@@ -1,0 +1,94 @@
+html {
+  font-family: -apple-system,sans-serif;
+  padding: 1rem;
+  max-width: 56em;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+article {
+  padding: 0.2em;
+
+  &:nth-of-type(2n) {
+    @extend %shaded;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  @media all and (max-width: 40em) {
+    flex-direction: column;
+  }
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0;
+  li {
+    list-style-type: none;
+    padding: .4em;
+  }
+}
+
+footer, .date {
+  color: $medium;
+  font-size: 0.8em;
+}
+
+code {
+  font-family: Monaco, monospace;
+  @extend %shaded;
+}
+
+img,iframe {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+  transition: border 0.4s ease;
+  border-bottom: 2px solid transparentize($accent, 1);
+
+  &:hover {
+    border-bottom: 2px solid $accent;
+  }
+
+  &.invisible {
+    color: $text;
+    border-bottom: none;
+    transition: none;
+  }
+}
+
+.ext::after {
+  content: '';
+  display: inline-block;
+  height: .7em;
+  width: .7em;
+  margin-left: 2px;
+  background: {
+    image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewbox='100 100 100 100' width='100' height='100'><path fill='%23FFF' stroke='" + transparentize($accent,0.001) + /* hack for Firefox */"' stroke-width='10' d='m43,35H5v60h60V57M45,5v10l10,10-30,30 20,20 30-30 10,10h10V5z'/></svg>");
+    repeat: no-repeat;
+    size: contain;
+  }
+}
+
+abbr {
+  border-bottom: 1px dotted $text;
+  cursor: pointer;
+}
+
+figure {
+  text-align: center;
+
+  figcaption {
+    font-style: italic;
+    font-size: 0.8em;
+  }
+}

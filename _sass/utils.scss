@@ -1,0 +1,13 @@
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+%shaded {
+  background-color: $light;
+  border-radius: .2em;
+  padding: .2em;
+}

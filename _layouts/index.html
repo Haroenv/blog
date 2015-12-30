@@ -1,0 +1,14 @@
+{% include header.html %}
+<section class="content">
+  {{site.description}}
+
+  {{ content }}
+</section>
+{% for post in site.posts %}
+  <article>
+    <h3><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
+    <span class="date">{{ post.date | date: "%-d %B %Y %-H:%M" }}</span>
+    <p><a href="{{site.baseurl}}{{post.url}}" class="invisible">{{ post.content | replace: '\n',' ' |strip_html | truncatewords: 50 }}</a></p>
+  </article>
+{% endfor %}
+{% include footer.html %}
