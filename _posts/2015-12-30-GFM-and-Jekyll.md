@@ -44,3 +44,10 @@ kramdown:
 {% endhighlight %}
 
 Additionally, this will only add the proper classes to the `<pre><code>`-block. You'll need to add a stylesheet yourself, like for example [this one](https://github.com/richleland/pygments-css) from Pygments compiled by @richleland.
+
+You can add some other gems like `jekyll-mentions` to get github `@-mentions` in your blog.
+
+{% highlight yaml %}
+gems:
+  - 'jekyll-mentions'
+{% endhighlight %}
