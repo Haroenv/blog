@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://blog.haroen.me/style.css" />
   <link rel="icon" type="image/png" href="https://haroen.me/favicon.png" />
 
-  <meta name="description" content="{{ page.content | replace: '\n',' ' |strip_html | truncatewords: 50 }}" />
+  <meta name="description" content="{{ page.content | markdownify | replace: '\n',' ' | strip_html | truncatewords: 50 }}" />
   <meta property="twitter:type" content="summary">
   <meta property="twitter:site" content="@haroenv">
   <meta property="og:title" content="Haroen's trip: {{page.title}}" />
