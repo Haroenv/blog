@@ -4,14 +4,14 @@
 	{{ content }}
 	<nav class="relative">
     {% if page.previous %}
-    <a href="{{site.baseurl}}{{ page.previous.url }}" rel="prev">prev</a>
+    <a href="{{ page.previous.url }}" rel="prev">prev</a>
     {% else %}
-    <a href="{{site.baseurl}}/">home</a>
+    <a href="/">home</a>
     {% endif %}
     {% if page.next %}
-    <a href="{{site.baseurl}}{{ page.next.url }}" rel="next">next</a>
+    <a href="{{ page.next.url }}" rel="next">next</a>
     {% else %}
-    <a href="{{site.baseurl}}/">home</a>
+    <a href="/">home</a>
     {% endif %}
   </nav>
 </section>

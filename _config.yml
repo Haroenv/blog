@@ -1,6 +1,5 @@
 sass:
   style: compressed
-baseurl: /blog
 permalink: :title
 highlighter: pygments
 markdown: kramdown
