@@ -2,8 +2,18 @@
 <section class="content">
 	<span class="date">{{ page.date | date: "%-d %B %Y %-H:%M" }}</span>
 	{{ content }}
-	{% if page.next %}<a href="{{site.baseurl}}{{ page.next.url }}" rel="next">next</a> {% endif %}
-	{% if page.previous %}<a href="{{site.baseurl}}{{ page.previous.url }}" rel="prev">prev</a> {% endif %}
+	<nav class="relative">
+    {% if page.previous %}
+    <a href="{{site.baseurl}}{{ page.previous.url }}" rel="prev">prev</a>
+    {% else %}
+    <a href="{{site.baseurl}}/">home</a>
+    {% endif %}
+    {% if page.next %}
+    <a href="{{site.baseurl}}{{ page.next.url }}" rel="next">next</a>
+    {% else %}
+    <a href="{{site.baseurl}}/">home</a>
+    {% endif %}
+  </nav>
 </section>
 <div id="disqus_thread"></div>
 <script src="//haroenvblog.disqus.com/embed.js" async></script>
