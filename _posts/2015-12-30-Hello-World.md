@@ -2,6 +2,8 @@
 layout: post
 title: First Post, Please Ignore
 date: 2015-12-30 13:00
+redirect-from:
+  - /Hello-World/
 ---
 
 Writing a first post on a blog is a pretty weird thing to do, But I'll try to explain what I've done here.

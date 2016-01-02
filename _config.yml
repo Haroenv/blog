@@ -7,4 +7,5 @@ kramdown:
   input: GFM
 gems:
   - 'jekyll-mentions'
+  - 'jekyll-redirect-from'
 description: 'Haroen Viaene is a student electronics-informatics in Ghent, living in Bruges. Interested in web development, space and travelling.'
