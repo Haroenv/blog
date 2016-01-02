@@ -1,5 +1,5 @@
 ---
-title: Sharing with github
+title: Sharing With GitHub
 layout: post
 date: 2016-1-2 16:30
 ---
