@@ -3,7 +3,7 @@ layout: post
 date: 2016-1-6 06:55
 title: A Year of GitHub Commits
 ---
-I've recently crossed the milestone of a year of continuous days with public GitHub contributions. Because this took me a while to achieve, I'm going to write up the things that happened during this time.
+I've today () crossed the milestone of a year of continuous days with public GitHub contributions. Because this took me a while to achieve, I'm going to write up the things that happened during this time.
 
 ## Very first commit
 
@@ -11,7 +11,6 @@ I learned about GitHub two years ago thanks to @NorFairKing. At the time I was p
 
 This course wasn't just complicated to me, it was complicated to most of us. That's why Syd (@NorFairKing) decided to make a summary with all the solutions of the questions posed in the book. Since he's a computer science major, he chose GitHub as a platform and LaTeX as a language to write the book in.
 
-<!-- fill in repo name -->
 [This repository](https://github.com/NorFairKing/lineairealgebra) was the very first one I've added some content to, and introduced me to the world of sharing learning resources more than I had been before.
 
 After the exams of January 2014 however GitHub kinda went to the back of my head. I was mostly doing other things.
@@ -32,4 +31,23 @@ Since I already knew how to use GitHub a bit, I jumped at the opportunity and pu
 
 After a few lessons of my real programming courses, I noticed that it'd be nice to be able to share the homework exercises we needed to do, and I became to love being able to work on any machine, so I made a repository for that course too.
 
-After that I felt like the sky was the limit. Why would you ever not share something? And to put that thought to actions, I open sourced all my lesson notes (Dutch, [notes-eoict](https://github.com/haroenv/notes-eoict)). And collected some contributions
+After that I felt like the sky was the limit. Why would you ever not share something? And to put that thought to actions, I open sourced all my lesson notes (Dutch, [notes-eoict](https://github.com/haroenv/notes-eoict)). And collected some contributions from other students.
+
+## The year
+
+At that point I noticed that I was getting a contribution every day for a while, and decided that I wanted not to lose that streak. Since then I've had some gaps, but I've fixed those later on by open-sourcing a few projects that were in private repositories earlier.
+
+I've joined [bullgit](https://bullg.it) in April of that year, and I suggest everyone to join a group of people also developing, you learn a lot more than you think, even by making bullshit projects.
+
+## And further
+
+I plan to still commit daily, which will make some days quantity over quality. I notice that breaking a streak of something is a very powerful action, and will make you less inclined to still do something.
+
+My intention however is to make more things that are useful for more people than only me. So far I've basically used my time to build things that are okay to use but they are finished products, and less a module that could be reused.
+
+This would bring my main summary at this:
+
+* "don't break the chain" is very powerful
+* share your coursework ([ikdoeict-notes.github.io](https://ikdoeict-notes.github.io))
+* join a dev group ([bullgit](https://bullg.it))
+* split up what you make in modules and share them
