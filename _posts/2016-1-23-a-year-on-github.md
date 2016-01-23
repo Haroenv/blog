@@ -56,3 +56,5 @@ This would bring my main summary at this:
 * share your coursework ([ikdoeict-notes.github.io](https://ikdoeict-notes.github.io))
 * join a dev group ([bullgit](https://bullg.it))
 * split up what you make in modules and share them
+
+As a closing statement: I'm looking for a cool place to do an internship from February to May 2017 anywhere in Europe. [Contact me](mailto:"Haroen Viaene" <hello@haroen.me>?subject=internship offer) if you're interested.
