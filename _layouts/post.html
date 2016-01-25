@@ -1,4 +1,6 @@
-{% include header.html %}
+---
+layout: default
+---
 <section class="content">
 	<span class="date">{{ page.date | date: "%-d %B %Y %-H:%M" }}</span>
 	{{ content }}
@@ -18,4 +20,3 @@
 </section>
 <div id="disqus_thread"></div>
 <script src="//haroenvblog.disqus.com/embed.js" async></script>
-{% include footer.html %}

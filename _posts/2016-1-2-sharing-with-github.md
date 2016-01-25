@@ -2,6 +2,7 @@
 title: Sharing With GitHub
 layout: post
 date: 2016-1-2 16:30
+tags: [github,jekyll]
 redirect-from:
   - /Sharing-with-github
   - /Sharing-with-github/

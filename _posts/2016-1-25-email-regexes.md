@@ -2,6 +2,7 @@
 title: Email Regexes
 layout: post
 date: 2016-1-25 10:24
+tags: programming
 ---
 
 You might've come around trying to check an email address. The best strategy for this is to be as lenient as possible. You don't want people who have a "weird" email address to get blocked by your system to even enter their address.

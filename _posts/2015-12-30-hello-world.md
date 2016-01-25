@@ -2,6 +2,7 @@
 layout: post
 title: First Post, Please Ignore
 date: 2015-12-30 13:00
+tags: other
 redirect-from:
   - /Hello-World/
   - /2015/12/30/Hello-World.html

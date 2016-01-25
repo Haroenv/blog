@@ -2,6 +2,7 @@
 layout: post
 date: 2016-1-23 12:00
 title: A Year of GitHub Commits
+tags: [github, programming]
 ---
 I've today (23 January 2016) crossed the milestone of a year of continuous days with public GitHub contributions. Because this took me a while to achieve, I'm going to write up the things that happened during this time.
 

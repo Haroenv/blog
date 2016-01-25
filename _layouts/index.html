@@ -1,9 +1,11 @@
-{% include header.html %}
-<section class="content">
+---
+layout: default
+---
+<section class="intro">
   {{site.description}}
-
   {{ content }}
 </section>
+
 {% for post in site.posts %}
   <article>
     <h3><a href="https://blog.haroen.me{{post.url}}">{{ post.title }}</a></h3>
@@ -11,4 +13,3 @@
     <p><a href="https://blog.haroen.me{{post.url}}" class="invisible">{{ post.content | replace: '\n',' ' |strip_html | truncatewords: 50 }}</a></p>
   </article>
 {% endfor %}
-{% include footer.html %}

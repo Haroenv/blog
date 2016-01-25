@@ -2,6 +2,7 @@
 layout: post
 title: GFM and Jekyll
 date: 2015-12-30 13:36
+tags: [jekyll, github]
 redirect-from:
   - /2015/12/30/GFM-and-Jekyll.html
 ---
