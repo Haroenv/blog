@@ -1,7 +1,7 @@
 sass:
   style: compressed
 permalink: :title
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
@@ -9,4 +9,4 @@ gems:
   - 'jekyll-mentions'
   - 'jekyll-redirect-from'
 description: 'Haroen Viaene is a student electronics-informatics in Ghent, living in Bruges (Belgium). Interested in web development, space and travelling.'
-baseurl: https://blog.haroen.me
+# baseurl: https://blog.haroen.me
