@@ -26,7 +26,7 @@ code is embedded in
 </figure>
 {% endhighlight %}
 
-Make sure that your styling for `figure.highlight`, doesn't change the alignment.
+Make sure that your styling for `figure.highlight` doesn't change the alignment.
 
 Source: <https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0>
 
