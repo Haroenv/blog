@@ -10,4 +10,4 @@ gems:
   - 'jekyll-redirect-from'
 description: 'Haroen Viaene is a student electronics-informatics in Ghent, living in Bruges (Belgium). Interested in web development, space and travelling.'
 url: https://blog.haroen.me
-url: http://localhost:4000
+# url: http://localhost:4000
