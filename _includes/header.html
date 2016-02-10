@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" href="https://haroen.me/apple-touch-icon.png" />
   <link rel="icon" href="https://haroen.me/apple-touch-icon.png">
   <meta name="author" content="Haroen Viaene" />
-  <link rel="stylesheet" href="https://blog.haroen.me/style.css" />
+  <link rel="stylesheet" href="{{site.url}}/style.css" />
   <link rel="icon" type="image/png" href="https://haroen.me/favicon.png" />
 
   <meta name="description" content="{{ page.content | markdownify | replace: '\n',' ' | strip_html | truncatewords: 50 }}" />
@@ -31,10 +31,10 @@
 <body>
 
   <header>
-    <h1><a href="https://blog.haroen.me/">Blog</a> | {{ page.title }}</h1>
+    <h1><a href="{{site.url}}/">Blog</a> | {{ page.title }}</h1>
     <nav>
       <ul>
-        <li><a href="https://blog.haroen.me/">Home</a></li>
+        <li><a href="{{site.url}}/">Home</a></li>
         <li><a href="https://haroen.me/" class="ext">About Me</a></li>
         <li><a href="https://twitter.com/haroenv" class="ext">Twitter</a></li>
       </ul>
