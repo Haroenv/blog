@@ -5,6 +5,7 @@ highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
+  footnote_backlink: '&#8617;&#xfe0e;'
 gems:
   - 'jekyll-mentions'
   - 'jekyll-redirect-from'
