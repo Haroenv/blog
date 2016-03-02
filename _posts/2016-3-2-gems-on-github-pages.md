@@ -9,7 +9,7 @@ You might've noticed that installing [gems](https://rubygems.org) that aren't al
 You install your needed `gems` by using a Gemfile. You do this by running `bundle init` and then in your `Gemfile`, you add the needed gems. Mine looks like this: 
 
 {% highlight ruby %}
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'octopress-autoprefixer'
@@ -59,5 +59,7 @@ Where you fill in the `env` variables with the values you want, and the `secure:
 ```
 travis encrypt GH_OAUTH_TOKEN=...
 ```
+
+Coming soon: another post with how to do github pages and gulp on travis.
 
 If you have any questions, ping me on twitter [@haroenv](https://twitter.com/haroenv).
