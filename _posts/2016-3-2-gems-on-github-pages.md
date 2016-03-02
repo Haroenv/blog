@@ -60,6 +60,8 @@ Where you fill in the `env` variables with the values you want, and the `secure:
 travis encrypt GH_OAUTH_TOKEN=...
 ```
 
+This method is in use for [haroenv/bus](https://github.com/haroenv/bus) (live: [haroen.me/bus](https://haroen.me/bus)).
+
 Coming soon: another post with how to do github pages and gulp on travis.
 
 If you have any questions, ping me on twitter [@haroenv](https://twitter.com/haroenv).
