@@ -49,7 +49,7 @@ after_success:
     - git add -f .
     - git config user.email "${GH_EMAIL}"
     - git config user.name "${GH_USER}"
-    - git commit -am "${GH_MESSAGE"
+    - git commit -am "${GH_MESSAGE}"
     # Any command that using GH_OAUTH_TOKEN must pipe the output to /dev/null to not expose your oauth token
     - git push https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} HEAD:gh-pages > /dev/null 2>&1
 {% endhighlight %}
