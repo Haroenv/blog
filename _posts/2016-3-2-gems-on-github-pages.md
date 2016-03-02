@@ -4,6 +4,7 @@ title: Any gems on Github Pages
 date: 2016-03-02 13:24
 tags: [jekyll, github, travis]
 ---
+
 You might've noticed that installing [gems](https://rubygems.org) that aren't allowed by Github isn't working. Luckily enough, [travis](https://travis-ci.org) offers a solution by building the site with jekyll, with the extra gems installed, and then pushing that to `gh-pages`. First step is to work in the `master` branch for your development.
 
 You install your needed `gems` by using a Gemfile. You do this by running `bundle init` and then in your `Gemfile`, you add the needed gems. Mine looks like this: 
@@ -61,7 +62,5 @@ travis encrypt GH_OAUTH_TOKEN=...
 ```
 
 This method is in use for [haroenv/bus](https://github.com/haroenv/bus) (live: [haroen.me/bus](https://haroen.me/bus)).
-
-Coming soon: another post with how to do github pages and gulp on travis.
 
 If you have any questions, ping me on twitter [@haroenv](https://twitter.com/haroenv).
