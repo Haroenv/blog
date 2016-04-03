@@ -9,7 +9,7 @@ layout: default
 {% for post in site.posts %}
   <article>
     <h3><a href="{{site.url}}{{post.url}}">{{ post.title }}</a></h3>
-    <span class="date">{{ post.date | date: "%-d %B %Y %-H:%M" }}</span>
+    <time class="date" datetime="{{post.date}}" pubdate>{{ post.date | date: "%-d %B %Y %-H:%M" }}</time>
     <p><a href="{{site.url}}{{post.url}}" class="invisible">{{ post.content | replace: '\n',' ' |strip_html | truncatewords: 50 }}</a></p>
   </article>
 {% endfor %}

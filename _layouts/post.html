@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="content">
-	<span class="date">{{ page.date | date: "%-d %B %Y %-H:%M" }}</span>
+	<time class="date" datetime="{{page.date}}" pubdate>{{ page.date | date: "%-d %B %Y %-H:%M" }}</time>
 	{{ content }}
 	<nav class="relative">
     {% if page.previous %}
