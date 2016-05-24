@@ -3,6 +3,7 @@ sass:
 permalink: :title
 highlighter: rouge
 markdown: kramdown
+future: true
 kramdown:
   input: GFM
   footnote_backlink: '&#8617;&#xfe0e;'
