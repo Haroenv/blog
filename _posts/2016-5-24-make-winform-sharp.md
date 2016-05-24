@@ -42,6 +42,6 @@ private static extern bool SetProcessDPIAware();
 And then we get (on supported platforms, IIRC from Windows 8) a proper pixel scaling of our form!
 
 <figure>
-  <img src="/assets/winform-sharp.png" alt="a sharp WinForm">
+  <img src="/assets/winform-fixed.png" alt="a sharp WinForm">
   <figcaption>A sharp WinForm</figcaption>
 </figure>
