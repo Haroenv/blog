@@ -36,7 +36,6 @@ static void Main() {
 
 [System.Runtime.InteropServices.DllImport("user32.dll")]
 private static extern bool SetProcessDPIAware();
-}
 {% endhighlight %}
 
 And then we get (on supported platforms, IIRC from Windows 8) a proper pixel scaling of our form!
