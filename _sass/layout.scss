@@ -7,10 +7,11 @@ html {
 }
 
 article {
-  padding: 0.2em;
+  padding: 1em;
 
   &:nth-of-type(2n) {
     @extend %shaded;
+    padding: 1em;
   }
 }
 
