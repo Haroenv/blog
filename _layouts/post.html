@@ -2,9 +2,9 @@
 layout: default
 ---
 <section class="content">
-	<time class="date" datetime="{{page.date}}" pubdate>{{ page.date | date: "%-d %B %Y %-H:%M" }}</time>
-	{{ content }}
-	<nav class="relative">
+  <time class="date" datetime="{{page.date}}" pubdate>{{ page.date | date: "%-d %B %Y %-H:%M" }}</time>
+  {{ content }}
+  <nav class="relative">
     {% if page.previous %}
     <a href="{{ page.previous.url }}" rel="prev">prev</a>
     {% else %}
