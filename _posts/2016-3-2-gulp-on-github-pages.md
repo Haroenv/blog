@@ -25,48 +25,48 @@ The `.travis.yml` to achieve this looks like this:
 # on a github oauth key that you can generate using curl.
 
 language:
-    node_js
+  node_js
 node_js:
-    - 5.7.0
+  - 5.7.0
 notifications:
 branches:
-    only:
-        - master
+  only:
+    - master
 env:
-    global:
-        # GH_OAUTH_TOKEN is the oauth token generated as described at
-        # https://help.github.com/articles/creating-an-oauth-token-for-command-line-use
-        #
-        # curl -u 'username' -d '{"scopes":["repo"],"note":"push to gh-pages from travis"}' https://api.github.com/authorizations
-        #
-        # It must be encrypted using the travis gem
-        # http://about.travis-ci.org/docs/user/build-configuration/#Secure-environment-variables
-        #
-        # travis encrypt GH_OAUTH_TOKEN=XXXXXXXXXXXXXXX
-        #
-        # User specific env variables
-        - secure: ...
-        - GH_OWNER=...
-        - GH_PROJECT_NAME=...
-        - GH_EMAIL=...
-        - GH_USER=...
-        - GH_MESSAGE=...
+  global:
+    # GH_OAUTH_TOKEN is the oauth token generated as described at
+    # https://help.github.com/articles/creating-an-oauth-token-for-command-line-use
+    #
+    # curl -u 'username' -d '{"scopes":["repo"],"note":"push to gh-pages from travis"}' https://api.github.com/authorizations
+    #
+    # It must be encrypted using the travis gem
+    # http://about.travis-ci.org/docs/user/build-configuration/#Secure-environment-variables
+    #
+    # travis encrypt GH_OAUTH_TOKEN=XXXXXXXXXXXXXXX
+    #
+    # User specific env variables
+    - secure: ...
+    - GH_OWNER=...
+    - GH_PROJECT_NAME=...
+    - GH_EMAIL=...
+    - GH_USER=...
+    - GH_MESSAGE=...
 script:
-    - gulp
+  - gulp
 after_success:
-    # Any command that using GH_OAUTH_TOKEN must pipe the output to /dev/null to not expose your oauth token
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git submodule add -b gh-pages https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} site > /dev/null 2>&1
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then cd site
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then if git checkout gh-pages; then git checkout -b gh-pages; fi
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git rm -r .
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then cp -R ../dist/* .
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then cp ../dist/.* .
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git add -f .
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git config user.email "${GH_EMAIL}"
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git config user.name "${GH_USER}"
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git commit -am "${GH_MESSAGE}"
-    # Any command that using GH_OAUTH_TOKEN must pipe the output to /dev/null to not expose your oauth token
-    - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git push https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} HEAD:gh-pages > /dev/null 2>&1
+  # Any command that using GH_OAUTH_TOKEN must pipe the output to /dev/null to not expose your oauth token
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git submodule add -b gh-pages https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} site > /dev/null 2>&1
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then cd site
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then if git checkout gh-pages; then git checkout -b gh-pages; fi
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git rm -r .
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then cp -R ../dist/* .
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then cp ../dist/.* .
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git add -f .
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git config user.email "${GH_EMAIL}"
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git config user.name "${GH_USER}"
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git commit -am "${GH_MESSAGE}"
+  # Any command that using GH_OAUTH_TOKEN must pipe the output to /dev/null to not expose your oauth token
+  - if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then git push https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} HEAD:gh-pages > /dev/null 2>&1
 ```
 
 Which is pretty similar to the `.travis.yml` of my previous post.
