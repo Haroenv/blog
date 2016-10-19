@@ -44,7 +44,7 @@ Make a new private repository with only a `gh-pages` branch (tip: if you're a [s
 
 Using this method you can also make your own shortlinks of the form `s.haroen.me/shortlink`, like [s.haroen.me/db](https://s.haroen.me/db). The content of the file [`/db/index.html`](https://s.haroen.me/db) is this:
 
-{% highlight html %}
+```html
 <!DOCTYPE HTML>
 <meta charset='UTF-8' />
 <meta http-equiv='refresh' content='1' url='https://github.com/Haroenv/notes-1eoict/blob/master/Databanken/samenvatting.md' />
@@ -53,7 +53,7 @@ Using this method you can also make your own shortlinks of the form `s.haroen.me
 </script>
 <title>Page Redirection</title>
 If you are not redirected automatically, follow the <a href='https://github.com/Haroenv/notes-1eoict/blob/master/Databanken/samenvatting.md' />link.</a>
-{% endhighlight %}
+```
 
 This uses three different ways to redirect:
 
