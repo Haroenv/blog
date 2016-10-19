@@ -87,12 +87,20 @@ and the `deploy.sh` like this:
 #!/bin/bash
 if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then
   # whatever commands you need
-  npm run doc
-  npm run test
-  git config user.name "${GH_USER}"
+  npm run build
+  git submodule add -b gh-pages https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} site > /dev/null 2>&1
+  cd site
+  if git checkout gh-pages; then git checkout -b gh-pages; fi
+  git rm -r .
+  # what file you output to
+  cp -R ../dist/* .
+  cp ../dist/.* .
+  git add -f .
   git config user.email "${GH_EMAIL}"
+  git config user.name "${GH_USER}"
   git commit -am "${GH_MESSAGE}"
-  git push https://${GH_OAUTH_TOKEN}@github.com/Haroenv/holmes HEAD:gh-pages > /dev/null 2>&1
+  # Any command that using GH_OAUTH_TOKEN must pipe the output to /dev/null to not expose your oauth token
+  then git push https://${GH_OAUTH_TOKEN}@github.com/${GH_OWNER}/${GH_PROJECT_NAME} HEAD:gh-pages > /dev/null 2>&1
 fi
 ```
 
