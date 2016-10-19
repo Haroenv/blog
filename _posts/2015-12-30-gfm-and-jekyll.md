@@ -13,25 +13,24 @@ They now use `rouge` and `kramdown` by default. *Old* highlighting still works, 
 
 Now, instead of
 
-{% highlight html %}
+```html
 <pre><code>...</code></pre>
-{% endhighlight %}
+```
 
 code is embedded in
 
-{% highlight html %}
+```html
 <figure class="highlight">
   <pre><code class="language-yaml" data-lang="yaml">...
   </code></pre>
 </figure>
-{% endhighlight %}
+```
 
 Make sure that your styling for `figure.highlight` doesn't change the alignment.
 
 Source: <https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0>
 
 ---
-
 
 In short words: don't do it.
 
