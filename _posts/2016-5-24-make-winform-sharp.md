@@ -14,18 +14,18 @@ You might have noticed that if you're making a WinForm application on a higher r
 
 The reason of this is because by default the application won't take the dpi scaling in account and scale the pixels it expect to the physical pixels. To fix this, you have to go to `Program.cs`, which is in the same folder as the one you created your WinForm project in. By default it looks like this:
 
-{% highlight csharp %}
+```csharp
 [STAThread]
 static void Main() {
     Application.EnableVisualStyles();
     Application.SetCompatibleTextRenderingDefault(false);
     Application.Run(new Form1());
 }
-{% endhighlight %}
+```
 
 We'll change that to this:
 
-{% highlight csharp %}
+```csharp
 [STAThread]
 static void Main() {
     if (Environment.OSVersion.Version.Major >= 6) SetProcessDPIAware();
@@ -36,9 +36,9 @@ static void Main() {
 
 [System.Runtime.InteropServices.DllImport("user32.dll")]
 private static extern bool SetProcessDPIAware();
-{% endhighlight %}
+```
 
-And then we get (on supported platforms, IIRC from Windows 8) a proper pixel scaling of our form!
+And then we get (on supported platforms, everything more than Vista) a proper pixel scaling of our form!
 
 <figure>
   <img src="/assets/winform-fixed.png" alt="a sharp WinForm">
