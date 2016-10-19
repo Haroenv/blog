@@ -72,3 +72,28 @@ after_success:
 Which is pretty similar to the `.travis.yml` of my previous post.
 
 You can see this in action on [github.com/punchtime/web](https://github.com/punchtime/web) and live on [punchtime.io](https://punchtime.io). You can also check out the gulpfile in that repository.
+
+Another option is to put the commands in an external file (like I did on [Holmes](https://github.com/Haroenv/holmes/)). This would make your `.travis.yml` look like this:
+
+```yml
+# ... the rest
+after_success:
+    - ./deploy.sh
+```
+
+and the `deploy.sh` like this:
+
+```sh
+#!/bin/bash
+if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then
+  # whatever commands you need
+  npm run doc
+  npm run test
+  git config user.name "${GH_USER}"
+  git config user.email "${GH_EMAIL}"
+  git commit -am "${GH_MESSAGE}"
+  git push https://${GH_OAUTH_TOKEN}@github.com/Haroenv/holmes HEAD:gh-pages > /dev/null 2>&1
+fi
+```
+
+This syntax might be better because it allows you to have the commands in a separate file.
