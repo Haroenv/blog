@@ -18,9 +18,9 @@
   <link rel="stylesheet" href="{{site.url}}/style.css" />
   <link rel="icon" type="image/png" href="https://haroen.me/favicon.png" />
 
-  <meta name="description" content="{{ page.content | markdownify | replace: '\n',' ' | strip_html | truncatewords: 50 }}" />
-  <meta name="og:description" content="{{ page.content | markdownify | replace: '\n',' ' | strip_html | truncatewords: 50 }}" />
-  <meta name="twitter:description" content="{{ page.content | markdownify | replace: '\n',' ' | strip_html | truncatewords: 50 }}" />
+  <meta name="description" content="{{ page.content | markdownify | normalize_whitespace | strip_html | truncatewords: 50 }}" />
+  <meta name="og:description" content="{{ page.content | markdownify | normalize_whitespace | strip_html | truncatewords: 50 }}" />
+  <meta name="twitter:description" content="{{ page.content | markdownify | normalize_whitespace | strip_html | truncatewords: 50 }}" />
   <meta property="twitter:card" content="summary">
   <meta property="twitter:site" content="@haroenv">
   <meta property="og:title" content="Haroen's blog: {{page.title}}" />
