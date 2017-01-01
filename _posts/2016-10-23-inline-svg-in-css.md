@@ -5,6 +5,8 @@ date: 2016-10-23 13:37
 tags: [css]
 ---
 
+UPDATE: check out my friend Lucas Bonomi's [pen](http://s.codepen.io/LukyVj/debug/693cbcc30258bf67b8c30047cce060eb) to transform your SVGs
+
 From time to time you'll want to have a small svg as a background image for some icon. However regularly linking to it causes an extra request, and that's not always fun.
 
 You can use a `utf-8` data URI though. Prefix your URI with:
@@ -21,4 +23,4 @@ Which you can then use like this:
 }
 ```
 
-Take in accoun that there's a bug in Firefox that doesn't allow `#` in data URIs. You can avoid this by using `rgb()` instead.
+Take in account that there's a bug in Firefox that doesn't allow `#` in data URIs. You can avoid this by using `rgb()` instead.
