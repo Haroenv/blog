@@ -8,9 +8,7 @@ It's not very hard to render json-ld with React, but since it's something that's
 ```js
 const Element = ({data}) => (
   <script type="application/ld+json">
-    {JSON.stringify({
-      ...data
-    })}
+    {JSON.stringify(data)}
   </script>
 )
 ```
