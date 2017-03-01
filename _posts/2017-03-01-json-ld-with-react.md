@@ -1,5 +1,5 @@
 ---
-title: JSON-ld with React
+title: JSON-LD with React
 date: 2017-03-01T12:55:12Z
 tags: react, linked-data, json-ld
 ---
