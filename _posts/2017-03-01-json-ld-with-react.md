@@ -5,7 +5,7 @@ tags: react, linked-data, json-ld
 ---
 It's not very hard to render json-ld with React, but since it's something that's not completely obvious; it looks like this: 
 
-```js
+```
 const Element = ({data}) => (
   <script type="application/ld+json">
     {JSON.stringify(data)}
