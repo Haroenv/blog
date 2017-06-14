@@ -63,7 +63,7 @@ nav ul{
 }
 
 code {
-  font-family: Monaco, monospace;
+  font-family: Operator Mono Ssm, Fira Code, Menlo, Monaco, monospace;
   @extend %shaded;
 }
 
@@ -109,7 +109,7 @@ abbr {
 
 figure {
   text-align: center;
-  margin: 0 auto;
+  margin: 2em;
 
   img, svg, video{
     width: 100%;

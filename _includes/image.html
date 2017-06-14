@@ -1,0 +1,8 @@
+<figure>
+  <img alt="{{include.alt}}" src="{{site.baseurl}}/img/posts{{page.url}}/{{include.img}}" />
+  {% if include.caption %}
+    <figcaption>{{include.caption}}</figcaption>
+  {% elsif include.alt %}
+    <figcaption>{{include.alt}}</figcaption>
+  {% endif %}
+</figure>
