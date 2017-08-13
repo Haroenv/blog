@@ -2,7 +2,7 @@
 layout: post
 title: Nearing the end
 date: 2017-05-01 12:00
-tags: [algolia,internship]
+tags: [algolia,internship,yarn,]
 ---
 Sorry that I have not been updating that regularly, it must have slipped my mind a lot (since I had to update the data of this post at least three times already). Let's just go for a summary of things I've done in the missing period: 
 
