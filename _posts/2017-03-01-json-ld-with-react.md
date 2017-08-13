@@ -1,7 +1,7 @@
 ---
 title: JSON-LD with React
 date: 2017-03-01T12:55:12Z
-tags: react, linked-data, json-ld
+tags: [react, linked-data, json-ld]
 ---
 It's not very hard to render json-ld with React, but since it's something that's not completely obvious; it looks like this: 
 
