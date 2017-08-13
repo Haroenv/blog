@@ -3,6 +3,13 @@ layout: default
 ---
 <section class="content">
   <time class="date" datetime="{{page.date}}" pubdate>{{ page.date | date: "%-d %B %Y %-H:%M" }}</time>
+  {% if page.tags %}
+  <ul class="tags">
+    {% for tag in page.tags %}
+    <li class="tags--container"><a class="tags--tag" href="/tags#{{tag}}">#{{tag}}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
   {{ content }}
   <nav class="relative">
     {% if page.previous %}

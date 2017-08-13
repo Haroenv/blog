@@ -141,3 +141,17 @@ figure {
     text-align: initial;
   }
 }
+
+.tags {
+  display: flex;
+  padding: 0;
+
+  &--container {
+    list-style-type: none
+  }
+
+  &--tag {
+    padding: 0.2em;
+    margin: 0 0.2em;
+  }
+}
