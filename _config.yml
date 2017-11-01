@@ -10,6 +10,7 @@ kramdown:
 gems:
   - 'jekyll-mentions'
   - 'jekyll-redirect-from'
-description: 'Haroen Viaene is a student electronics-informatics in Ghent, living in Bruges (Belgium). Interested in web development, space and travelling.'
+description: |
+  Hey there, I am Haroen and I'm living in Paris, working for Algolia, on the libraries that make handling a search interface better than before. I'm originally from Belgium and love to meet new people, get in touch!
 url: https://blog.haroen.me
 # url: http://localhost:4000
