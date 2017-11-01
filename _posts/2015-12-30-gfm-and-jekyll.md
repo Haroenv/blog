@@ -72,7 +72,7 @@ kramdown:
 {% endraw %}
 {% endhighlight %}
 
-Additionally, this will only add the proper classes to the `<pre><code>...</code></pre>`-block. You'll need to add a stylesheet yourself, like for example [this one](https://github.com/richleland/pygments-css) from Pygments compiled by @richleland.
+Additionally, this will only add the proper classes to the `<pre><code>...</code></pre>`-block. You'll need to add a stylesheet yourself, like for example [this one](https://github.com/richleland/pygments-css) from Pygments compiled by [@richleland](https://github.com/richleland).
 
 You can add some other gems like `jekyll-mentions` to get github `@-mentions` in your blog.
 

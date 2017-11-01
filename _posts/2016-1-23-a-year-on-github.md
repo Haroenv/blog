@@ -13,9 +13,9 @@ I've today (23 January 2016) crossed the milestone of a year of continuous days 
 
 ## Very first commit
 
-I learned about GitHub two years ago thanks to @NorFairKing. At the time I was preparing for my first exam period in my study Physics and there was one very complicated course to me: Linear Algebra.
+I learned about GitHub two years ago thanks to [@NorFairKing](https://github.com/NorFairKing). At the time I was preparing for my first exam period in my study Physics and there was one very complicated course to me: Linear Algebra.
 
-This course wasn't just complicated to me, it was complicated to most of us. That's why Syd (@NorFairKing) decided to make a summary with all the solutions of the questions posed in the book. Since he's a computer science major, he chose GitHub as a platform and LaTeX as a language to write the book in.
+This course wasn't just complicated to me, it was complicated to most of us. That's why Syd ([@NorFairKing](https://github.com/NorFairKing)) decided to make a summary with all the solutions of the questions posed in the book. Since he's a computer science major, he chose GitHub as a platform and LaTeX as a language to write the book in.
 
 [This repository](https://github.com/NorFairKing/lineairealgebra) was the very first one I've added some content to, and introduced me to the world of sharing learning resources more than I had been before.
 
@@ -23,7 +23,7 @@ After the exams of January 2014 however GitHub kinda went to the back of my head
 
 ## GitHub pages
 
-During the summer of that year, I decided that our youth club @jwronline needed a new website (our old one had accidentally been taken down). I'd heard about [html5up](http://html5up.net), so I decided to temporarily switch some of the information towards a layout from there.
+During the summer of that year, I decided that our youth club [@jwronline](https://github.com/jwronline) needed a new website (our old one had accidentally been taken down). I'd heard about [html5up](http://html5up.net), so I decided to temporarily switch some of the information towards a layout from there.
 
 Before that I'd never touched html, css or javascript, so seeing a working site, with all the tags was a real interesting experience to me. Over the time of a week or two, I filled in the content and added some small tweaks to the design.
 
@@ -31,7 +31,7 @@ At this point I wanted to see it online to test whether or not it actually worke
 
 ## In school
 
-After that summer, I switched majors to electronics/informatics. During the first lesson of computer architecture, our prof @roelvs explained how he hosted the syllabus there, and that we could all make contributions (and that we'd get one point extra if we did).
+After that summer, I switched majors to electronics/informatics. During the first lesson of computer architecture, our prof [@roelvs](https://github.com/roelvs) explained how he hosted the syllabus there, and that we could all make contributions (and that we'd get one point extra if we did).
 
 Since I already knew how to use GitHub a bit, I jumped at the opportunity and put out pull requests for all the things I could think of to change. In the beginning most of this were small typos because I didn't understand the material enough, but during the exam period, I put some explanations of things I didn't find all that clear myself.
 

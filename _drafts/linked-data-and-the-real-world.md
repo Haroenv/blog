@@ -18,12 +18,12 @@ There is however a workaround for this. You can link your data inside the same p
 <!--there are zero width spaces after each@ -->
 ```json
 {
-  "@​context": {
-    "@​vocab": "http://vocab.datex.org/terms#"
+  "@context": {
+    "@vocab": "http://vocab.datex.org/terms#"
   },
-  "@​graph": [{
-    "@​id": "https://verkeerscentrum.be/data.jsonld#123a1592ef2bac",
-    "@​type": "Situation",
+  "@graph": [{
+    "@id": "https://verkeerscentrum.be/data.jsonld#123a1592ef2bac",
+    "@type": "Situation",
     "Accident": {
       
     }

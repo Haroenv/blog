@@ -1,6 +1,6 @@
 # Blog
 
-General purpose blog by @Haroenv
+General purpose blog by [@Haroenv](https://github.com/Haroenv)
 
 # License
 
