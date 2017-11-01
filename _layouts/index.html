@@ -6,6 +6,7 @@ layout: default
   {{ content }}
 </section>
 
+<noscript>
 {% for post in site.posts %}
   <article>
     <h3><a href="{{site.url}}{{post.url}}">{{ post.title }}</a></h3>
@@ -14,3 +15,4 @@ layout: default
     <p><a href="{{site.url}}{{post.url}}" class="invisible">{{ post.content | normalize_whitespace | strip_html | truncatewords: 50 }} <span class="muted">{{ post.content | number_of_words | minus: 50 }} words more</span></a></p>
   </article>
 {% endfor %}
+</noscript>

@@ -3,6 +3,13 @@ layout: compress
 ---
 {% include header.html %}
 <section class="content">
+  <div id="searchbox"></div>
+  <div id="hits"></div>
+  <div id="pagination" hidden></div>
   {{ content }}
 </section>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/instantsearch.js@2/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/instantsearch.js@2/dist/instantsearch-theme-algolia.min.css">
+<script src="https://unpkg.com/instantsearch.js@2/dist/instantsearch.min.js"></script>
+<script src="/assets/search.js"></script>
 {% include footer.html %}

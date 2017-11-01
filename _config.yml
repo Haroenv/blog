@@ -7,8 +7,15 @@ future: true
 kramdown:
   input: GFM
   footnote_backlink: '&#8617;&#xfe0e;'
-gems:
+exclude: [vendor]
+plugins:
   - 'jekyll-redirect-from'
+algolia:
+  application_id: '1AWHE68HXJ'
+  index_name: 'blog'
+  settings:
+    highlightPreTag: <mark>
+    highlightPostTag: </mark>
 description: |
   Hey there, I am Haroen and I'm living in Paris, working for Algolia, on the libraries that make handling a search interface better than before. I'm originally from Belgium and love to meet new people, get in touch!
 url: https://blog.haroen.me
