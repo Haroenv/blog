@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'jekyll-redirect-from'
 
 group :jekyll_plugins do
-  gem 'algoliasearch-jekyll'
+  gem 'jekyll-redirect-from'
+  gem "jekyll-algolia", git: "https://github.com/algolia/jekyll-algolia", branch: "develop"
 end
