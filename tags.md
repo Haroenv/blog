@@ -12,7 +12,7 @@ layout: default
 {% assign sortedtags = tags | split:' ' | sort %}
 
 {% for tag in sortedtags %}
-  <h3 id="{{ tag }}"><a href="#{{ tag }}">#{{ tag }}</a></h3>
+  <h3 id="{{ tag }}"><a href="#{{ tag }}"><small>#</small>{{ tag }}</a></h3>
   <ul>
   {% for post in site.tags[tag] %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>

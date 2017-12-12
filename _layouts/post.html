@@ -6,7 +6,7 @@ layout: default
   {% if page.tags %}
   <ul class="tags">
     {% for tag in page.tags %}
-    <li class="tags--container"><a class="tags--tag" href="/tags#{{tag}}">#{{tag}}</a></li>
+    <li class="tags--container"><a class="tags--tag" href="/tags#{{tag}}"><small>#</small>{{tag}}</a></li>
     {% endfor %}
   </ul>
   {% endif %}

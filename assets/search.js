@@ -26,7 +26,7 @@ const Time = ({ date }) =>
 const stripHighlight = text =>
   text.replace(/<\/?mark>/g, '');
 const Tag = ({ tag, highlighted }) =>
-  `<a href="/tags#${tag}" onclick="refineTag(${tag});">#${highlighted}</a>`;
+  `<a href="/tags#${tag}" onclick="refineTag(${tag});"><small>#</small>${highlighted}</a>`;
 const Tags = ({ tags }) =>
   tags
     .map(({ value }) =>
