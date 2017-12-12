@@ -167,3 +167,13 @@ figure {
     margin: 0 0.2em;
   }
 }
+
+blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 2px solid $accent;
+}
+
+hr {
+  border: 1px solid $accent;
+}
