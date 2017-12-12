@@ -19,7 +19,7 @@ search.addWidget(
 const dateString = time =>
   new Date(time * 1000).toLocaleString();
 const Time = ({ date }) =>
-  `<time datetime=${date} class="muted">
+  `<time datetime="${date}" class="muted">
     ${dateString(date)}
    </time>`;
 
@@ -46,8 +46,8 @@ const Hit = ({
     text: { value: text },
     title: { value: title },
   },
+  date,
   url,
-  posted_at: date,
 }) => `
 <article>
   <h3><a href="${url}">${title}</a></h3>
