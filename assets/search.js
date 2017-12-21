@@ -16,15 +16,13 @@ search.addWidget(
   })
 );
 
-const dateString = time =>
-  new Date(time * 1000).toLocaleString();
+const dateString = time => new Date(time * 1000).toLocaleString();
 const Time = ({ date }) =>
   `<time datetime="${date}" class="muted">
     ${dateString(date)}
    </time>`;
 
-const stripHighlight = text =>
-  text.replace(/<\/?mark>/g, '');
+const stripHighlight = text => text.replace(/<\/?mark>/g, '');
 const Tag = ({ tag, highlighted }) =>
   `<a href="/tags#${tag}" onclick="refineTag(${tag});"><small>#</small>${highlighted}</a>`;
 const Tags = ({ tags }) =>
@@ -41,11 +39,7 @@ const Text = ({ text, url }) =>
   `<p><a href="${url}" class="invisible">${text}</a></p>`;
 
 const Hit = ({
-  _highlightResult: {
-    tags,
-    text: { value: text },
-    title: { value: title },
-  },
+  _highlightResult: { tags, text: { value: text }, title: { value: title } },
   date,
   url,
 }) => `
@@ -64,13 +58,8 @@ search.addWidget(
     templates: {
       empty: 'No results',
       allItems: ({ hits, query }) => {
-        if (
-          query.length > 0 ||
-          window.showResultsByDefault
-        ) {
-          document.getElementById(
-            'pagination'
-          ).hidden = false;
+        if (query.length > 0 || window.showResultsByDefault) {
+          document.getElementById('pagination').hidden = false;
           return hits.map(Hit).join('');
         }
         document.getElementById('pagination').hidden = true;

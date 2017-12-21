@@ -9,12 +9,7 @@ Phew, what a busy week! I arrived Sunday and immediately went to the offices of 
 
 Monday I started at 9:30 with some meetings that explained how Algolia works behind the [screens](https://stackshare.io/posts/how-algolia-built-their-realtime-search-as-a-service-product), how the company culture is working, and practical information. It was all a bit overwhelming, but in a good way ☺️.
 
-{% include
-	image.html
-	img='calendar.png'
-	alt='screenshot of a calendar view the week of 8 February'
-	caption='my calendar for this week' 
-%}
+{% include image.html img='calendar.png' alt='screenshot of a calendar view the week of 8 February' caption='my calendar for this week' %}
 
 After getting basic info, it was time to get my real assignment. Last week Sylvain (VP engineering), Vincent (my mentor, and teamlead of empowerment) and Kevin (devsigner) went to the Facebook offices in London to meet with the creators/maintainers of [Yarn](https://yarnpkg.com)[^1], who mostly were working at Facebook. They did that, because I'm going to transform the search which there is now (thanks to Vincent) from being only results to a whole new detail page, with information coming from several places. I'm looking forward to have a meaningful impact.
 

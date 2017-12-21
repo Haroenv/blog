@@ -4,6 +4,7 @@ date: 2016-1-23 12:00
 title: A Year of GitHub Commits
 tags: [github, programming]
 ---
+
 I've today (23 January 2016) crossed the milestone of a year of continuous days with public GitHub contributions. Because this took me a while to achieve, I'm going to write up the things that happened during this time.
 
 <figure>
@@ -58,4 +59,4 @@ This would bring my main summary at this:
 * join a dev group ([bullgit](https://bullg.it))
 * split up what you make in modules and share them
 
-As a closing statement: I'm looking for a cool place to do an internship from February to May 2017 anywhere in Europe. [Contact me](mailto:"Haroen Viaene" <hello@haroen.me>?subject=internship offer) if you're interested.
+As a closing statement: I'm looking for a cool place to do an internship from February to May 2017 anywhere in Europe. [Contact me](mailto:"Haroen Viaene" <mailto:hello@haroen.me>?subject=internship offer) if you're interested.

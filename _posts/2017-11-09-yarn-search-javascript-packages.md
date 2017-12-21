@@ -159,4 +159,4 @@ We hope you enjoyed this article, see you soon for this year’s community gift 
 
 _Thanks to [Vincent](https://twitter.com/vvoyer) and [Ivana](https://twitter.com/voiceofivana) for their help while writing this article._
 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

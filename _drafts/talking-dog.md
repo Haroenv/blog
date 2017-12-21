@@ -3,7 +3,7 @@ layout: post
 title: Making a dog talk
 ---
 
-At the end of January I was contacted by *Kusttheater*, a theatre company from Blankenberge (Belgium). They want to be able to make a dog talk like on this video:
+At the end of January I was contacted by _Kusttheater_, a theatre company from Blankenberge (Belgium). They want to be able to make a dog talk like on this video:
 
 <figure>
 <!-- <video src="/assets/britains-got-talent.mp4" controls></video> -->

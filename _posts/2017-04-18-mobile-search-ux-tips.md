@@ -5,7 +5,7 @@ title: Mobile search UX tips
 tags: [algolia,internship,ux,mobile,crosspost]
 ---
 
->I wrote a blog post on the Algolia blog: [Small but impactful search UX tips for mobile web](https://blog.algolia.com/mobile-search-ux-tips/)
+> I wrote a blog post on the Algolia blog: [Small but impactful search UX tips for mobile web](https://blog.algolia.com/mobile-search-ux-tips/)
 
 ---
 
@@ -95,8 +95,7 @@ Another thing I learned about while making search for Yarn is the [OpenSearch](h
 </OpenSearchDescription>
 ```
 
-You can read more about the implementation of OpenSearch in [Chrome](http://dev.chromium.org/tab-to-search), 
-[Firefox](https://developer.mozilla.org/en/Add-ons/Creating_OpenSearch_plugins_for_Firefox), [Safari](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_8_0.html), [Internet Explorer](https://msdn.microsoft.com/library/dn832639(v=vs.85).aspx), [Yandex](https://yandex.com/support/browser/search-and-browse/search.xml) and [in general](http://www.opensearch.org).
+You can read more about the implementation of OpenSearch in [Chrome](http://dev.chromium.org/tab-to-search), [Firefox](https://developer.mozilla.org/en/Add-ons/Creating_OpenSearch_plugins_for_Firefox), [Safari](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_8_0.html), [Internet Explorer](<https://msdn.microsoft.com/library/dn832639(v=vs.85).aspx>), [Yandex](https://yandex.com/support/browser/search-and-browse/search.xml) and [in general](http://www.opensearch.org).
 
 ### The Devil is in the Details
 

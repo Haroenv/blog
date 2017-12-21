@@ -4,7 +4,8 @@ title: JSON-LD with React
 date: 2017-03-01T12:55:12Z
 tags: [react, linked-data, json-ld]
 ---
-It's not very hard to render json-ld with React, but since it's something that's not completely obvious; it looks like this: 
+
+It's not very hard to render json-ld with React, but since it's something that's not completely obvious; it looks like this:
 
 ```
 const JsonLd = ({ data }) =>
@@ -23,7 +24,7 @@ As [noted](#comment-3255424415) by Iain Collins, in some cases you'll need to se
   />;{% endraw %}
 ```
 
-You can then use this component like this: 
+You can then use this component like this:
 
 ```
 const data = {
@@ -41,6 +42,5 @@ const App = () =>
     <JsonLd data={data} />
   </body>;
 ```
-
 
 If you would have naively done this, you would expect to escape the brackets (`\{`), but it's easier if you render the `JSON.stringify` output for the content of the `script`.
