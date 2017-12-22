@@ -57,7 +57,7 @@ search.addWidget(
     container: '#hits',
     templates: {
       empty: 'No results',
-      allItems: ({ hits, query }) => {
+      allItems({ hits, query }) {
         if (query.length > 0 || window.showResultsByDefault) {
           document.getElementById('pagination').hidden = false;
           return hits.map(Hit).join('');
