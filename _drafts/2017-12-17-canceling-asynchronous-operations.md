@@ -57,9 +57,8 @@ Similarly to those, you can also subscribe to an event with `addEventListener('a
 # imperative vs declarative
 
 * nice that you can abort remotely
-*
-
-# React
+* in declarative, you don't need to abort remotely
+* e.g. in React, accept a signal for imperative code
 
 ```jsx
 <Fetch
@@ -86,18 +85,34 @@ Similarly to those, you can also subscribe to an event with `addEventListener('a
 />
 ```
 
-# solution?
+* some ideas about Canceler
 
-* allow `abort` prop to be set to true
-* is that even good
-* what about refresh in higher level comps
+```jsx
+<Canceler
+  render={({ signal }) => (
+    <>
+      <Fetch signal={signal} />
+      <Canvas signal={signal} />
+    </>
+  )}
+/>
+```
+
+* cancel the fetch when component unmounts
 
 # Read more
 
 If you want to read more about the ideas in this post, there are a few posts and informational documents by others that influenced me while researching about this topic:
 
-* [concurrent operations jsconf bp]()
-* [Mozilla Dev Network on AbortController]()
-* [google blog AbortController]()
-* [bramus post AbortController]()
-* [render prop mjackson]()
+* Async patterns to scale your multicore JavaScript elegantly - Jonathan Martin
+  * [video](https://talksearch-embed.algolia.com/?i=JSConf-playlist-PL37ZVnwpeshH9ztZfHqvQhF1_Zm4VcCTD&video=726eZyVtC0Y)
+  * [about](http://jsconfbp.com/speakers/jonathan-martin/)
+  * [slides](https://speakerdeck.com/nybblr/async-patterns-to-scale-your-multicore-javascript-dot-dot-dot-elegantly)
+* info about `AbortController`
+  * [MDN](https://developer.mozilla.org/en-US/docs/Web/API/AbortController)
+  * [Jake Archibald: Abortable fetch](https://developers.google.com/web/updates/2017/09/abortable-fetch)
+  * [Bramus: Cancel a JavaScript Promise with AbortController](https://www.bram.us/2017/12/13/cancel-a-javascript-promise-with-abortcontroller/)
+  * [Seva Zaikov: How to Cancel Your Promise](http://blog.bloomca.me/2017/12/04/how-to-cancel-your-promise.html)
+* render props
+  * [Michael Jackson: Never Write Another HoC](https://www.youtube.com/watch?v=BcVAq3YFiuc)
+  * [Michael Jackson: Use a Render Prop!](https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce)
