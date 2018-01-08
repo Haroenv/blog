@@ -113,6 +113,10 @@ If you want to read more about the ideas in this post, there are a few posts and
   * [Jake Archibald: Abortable fetch](https://developers.google.com/web/updates/2017/09/abortable-fetch)
   * [Bramus: Cancel a JavaScript Promise with AbortController](https://www.bram.us/2017/12/13/cancel-a-javascript-promise-with-abortcontroller/)
   * [Seva Zaikov: How to Cancel Your Promise](http://blog.bloomca.me/2017/12/04/how-to-cancel-your-promise.html)
+* `p-cancelable`
+  * [GitHub](https://github.com/sindresorhus/p-cancelable)
+* Cancelable `async` functions
+  * [Kyle Simpson: CAF](https://github.com/getify/CAF)
 * render props
   * [Michael Jackson: Never Write Another HoC](https://www.youtube.com/watch?v=BcVAq3YFiuc)
   * [Michael Jackson: Use a Render Prop!](https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce)
