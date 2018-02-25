@@ -60,3 +60,7 @@ This would bring my main summary at this:
 * split up what you make in modules and share them
 
 As a closing statement: I'm looking for a cool place to do an internship from February to May 2017 anywhere in Europe. [Contact me](mailto:"Haroen Viaene" <mailto:hello@haroen.me>?subject=internship offer) if you're interested.
+
+Update, I had a great internship at [Algolia](https://algolia) and moved to Paris to work at a full-time position afterwards.
+
+Update, as of October 2017 I accidentally forgot to commit a few times on weekends, since I got confused with time zones. Although it looks like I still commited daily, that doesn't really count, since I do a commit on [ikhaat.gent](https://ikhaat.gent) ([repo](https://github.com/fccghent/ikhaat)) daily to update the data.
