@@ -4,8 +4,14 @@ const search = instantsearch({
   indexName: 'blog',
   searchParameters: {
     hitsPerPage: 10,
+    attributesToRetrieve: ['title', 'tags', 'content', 'date', 'url'],
   },
-  routing: true,
+  routing: {
+    stateMapping: {
+      stateToRoute: ({ query, page }) => ({ q: query, p: page }),
+      routeToState: ({ q, p }) => ({ query: q, page: p }),
+    },
+  },
 });
 
 search.addWidget(
