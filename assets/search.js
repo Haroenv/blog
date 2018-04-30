@@ -5,9 +5,7 @@ const search = instantsearch({
   searchParameters: {
     hitsPerPage: 10,
   },
-  urlSync: {
-    trackedParameters: ['query', 'attribute:*', 'page'],
-  },
+  routing: true,
 });
 
 search.addWidget(
@@ -35,32 +33,47 @@ const Tags = ({ tags }) =>
     )
     .join(', ');
 
-const Text = ({ text, url }) =>
-  `<p><a href="${url}" class="invisible">${text}</a></p>`;
+const Content = ({ content, url }) =>
+  `<p><a href="${url}" class="invisible">${content}</a></p>`;
 
-const Hit = ({
-  _highlightResult: { tags, text: { value: text }, title: { value: title } },
-  date,
-  url,
-}) => `
+const Hit = ({ tags, content, title, date, url }) => `
 <article>
   <h3><a href="${url}">${title}</a></h3>
   ${Time({ date })}
   ${Tags({ tags })}
-  ${Text({ text, url })}
+  ${Content({ content, url })}
   <a href="${url}">read more</a>
 </article>
 `;
+
+const flattenHit = ({
+  _highlightResult: {
+    tags,
+    content: { value: content },
+    title: { value: title },
+  },
+  date,
+  url,
+}) => ({
+  tags,
+  content,
+  title,
+  date,
+  url,
+});
 
 search.addWidget(
   instantsearch.widgets.hits({
     container: '#hits',
     templates: {
       empty: 'No results',
-      allItems({ hits, query }) {
+      allItems({ hits, query = '' }) {
         if (query.length > 0 || window.showResultsByDefault) {
           document.getElementById('pagination').hidden = false;
-          return hits.map(Hit).join('');
+          return hits
+            .map(flattenHit)
+            .map(Hit)
+            .join('');
         }
         document.getElementById('pagination').hidden = true;
       },
