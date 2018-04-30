@@ -6,7 +6,6 @@ before_install:
   - gem install bundler
 script: 
   - bundle exec jekyll algolia
-
 branches:
   only:
     - gh-pages
