@@ -3,18 +3,18 @@ title: Coding on the go
 layout: post
 ---
 
-#iOS
+# iOS
 
-##git2go
+## git2go
 
-##Working Copy
+## Working Copy
 
-#Android
+# Android
 
-##MrHyde
+## MrHyde
 
-#Web
+# Web
 
-##prose.io
+## prose.io
 
-##github web interface
+## github web interface
