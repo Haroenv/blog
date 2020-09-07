@@ -8,4 +8,4 @@ group :jekyll_plugins do
 end
 
 # Added at 2018-02-25 10:43:10 -0800 by haroen:
-gem "nokogiri", "~> 1.8.2"
+gem "nokogiri", "~> 1.10.8"
