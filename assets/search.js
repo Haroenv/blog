@@ -14,12 +14,6 @@ const search = instantsearch({
   },
 });
 
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#searchbox',
-  })
-);
-
 const dateString = time => new Date(time * 1000).toLocaleString();
 const Time = ({ date }) =>
   `<time datetime="${date}" class="muted">
@@ -68,7 +62,10 @@ const flattenHit = ({
   url,
 });
 
-search.addWidget(
+search.addWidgets([
+  instantsearch.widgets.searchBox({
+    container: '#searchbox',
+  }),
   instantsearch.widgets.hits({
     container: '#hits',
     templates: {
@@ -84,13 +81,10 @@ search.addWidget(
         document.getElementById('pagination').hidden = true;
       },
     },
-  })
-);
-
-search.addWidget(
+  }),
   instantsearch.widgets.pagination({
     container: '#pagination',
-  })
-);
+  }),
+]);
 
 search.start();
