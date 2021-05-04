@@ -26,7 +26,7 @@ To get that functionality for everyone, react-instantsearch wraps the search box
 We only want to submit the form when a user types something, so we will put the “required” attribute on the input. That prevents a user from submitting an empty search. However the default result isn’t too beautiful:
 
 <figure>
-  <img src="https://blog.algolia.com/wp-content/uploads/2017/04/Screen-Shot-2017-04-05-at-15.25.49.png" alt="an input that has been submitted, but was required. It shows an error message 'Fill out this field'">
+  <img src="https://blog-api.algolia.com/wp-content/uploads/2017/04/Screen-Shot-2017-04-05-at-15.25.49.png" alt="an input that has been submitted, but was required. It shows an error message 'Fill out this field'">
   <figcaption>A required input</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ When making the search for Yarn a few other things came to my attention —I’d
 ### OpenSearch
 
 <figure>
-  <img src="https://blog.algolia.com/wp-content/uploads/2017/04/ezgif-2-12bc36fde1.gif" alt="a browser with a focused URL bar, once 'yarn' is typed, and then a tab, followed by a keyword, then enter, the keywords get searched in">
+  <img src="https://blog-api.algolia.com/wp-content/uploads/2017/04/ezgif-2-12bc36fde1.gif" alt="a browser with a focused URL bar, once 'yarn' is typed, and then a tab, followed by a keyword, then enter, the keywords get searched in">
   <figcaption>OpenSearch in action on the <a href="https://yarnpkg.com/en/packages">Yarn site</a></figcaption>
 </figure>
 
