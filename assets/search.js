@@ -65,6 +65,7 @@ const flattenHit = ({
 search.addWidgets([
   instantsearch.widgets.searchBox({
     container: '#searchbox',
+    autofocus: window.location.pathname === '/',
   }),
   instantsearch.widgets.hits({
     container: '#hits',
