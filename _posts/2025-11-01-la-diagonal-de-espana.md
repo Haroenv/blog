@@ -1,7 +1,7 @@
 ---
 layout: post
 title: La diagonal de España
-date: 2025-11-01 13:00
+date: 2025-11-05 18:00
 tags: [cycling,travel]
 ---
 
