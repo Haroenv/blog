@@ -1,0 +1,66 @@
+{
+  "rides": [
+    {
+      "distance": 249,
+      "elevation": 3180,
+      "moving_time_minutes": 593,
+      "calories": 11339,
+      "avg_heart_rate": 133,
+      "max_heart_rate": 164
+    },
+    {
+      "distance": 270,
+      "elevation": 3812,
+      "moving_time_minutes": 693,
+      "calories": 12144,
+      "avg_heart_rate": 123,
+      "max_heart_rate": 154
+    },
+    {
+      "distance": 228,
+      "elevation": 2792,
+      "moving_time_minutes": 552,
+      "calories": 0,
+      "avg_heart_rate": 0,
+      "max_heart_rate": 0
+    },
+    {
+      "distance": 213,
+      "elevation": 2403,
+      "moving_time_minutes": 538,
+      "calories": 7685,
+      "avg_heart_rate": 114,
+      "max_heart_rate": 145
+    },
+    {
+      "distance": 81,
+      "elevation": 1010,
+      "moving_time_minutes": 205,
+      "calories": 3139,
+      "avg_heart_rate": 115,
+      "max_heart_rate": 145
+    },
+    {
+      "distance": 58,
+      "elevation": 718,
+      "moving_time_minutes": 117,
+      "calories": 2677,
+      "avg_heart_rate": 138,
+      "max_heart_rate": 161
+    }
+  ],
+  "summary": {
+    "days_cycling": 6,
+    "total_distance": 1099,
+    "total_distance_formatted": "1 099",
+    "total_elevation": 13915,
+    "total_elevation_formatted": "13 915",
+    "total_moving_time_minutes": 2698,
+    "total_moving_time_formatted": "44h 58m",
+    "average_speed": 24.4,
+    "average_heart_rate": 98,
+    "max_heart_rate": 164,
+    "total_calories": 36984,
+    "total_calories_formatted": "36 984"
+  }
+}
