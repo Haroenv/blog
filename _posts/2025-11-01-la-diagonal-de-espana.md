@@ -380,6 +380,11 @@ Overall, this was an amazing trip that I will remember for a long time. Cycling 
   h2 {
     margin-top: 4em;
   }
+  
+  /* Prevent horizontal scroll from sliding illustration */
+  html {
+    overflow-x: hidden;
+  }
 </style>
 
 <!-- strava -->
@@ -434,6 +439,7 @@ svg text {
   width: 20em;
   shape-outside: circle(50%);
   transform: translateX(0);
+  overflow: visible;
 }
 
 @media (min-width: 70em) {
@@ -448,7 +454,7 @@ svg text {
 }
 
 .floating-illustration-right.slid-away {
-  transform: translateX(20em);
+  transform: translateX(calc(100% + 1em));
 }
 
 .illustration-sentinel {
