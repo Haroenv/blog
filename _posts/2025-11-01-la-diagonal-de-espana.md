@@ -13,7 +13,7 @@ tags: [cycling,travel]
 
 _La diagonal de España_ is a project to cycle from the South West to the North East of Spain, from Sevilla to Donostia. A distance of about 1100 kilometers, to be done in about five days.
 
-This was done alone in late October 2025, riding alone with a light bikepacking setup, staying in hotels along the way.
+This was done in late October 2025, riding alone with a light bikepacking setup, staying in hotels along the way.
 
 ## The idea
 
@@ -81,7 +81,7 @@ My partner gave me some extra challenges to do during the trip, to make it more 
 
 As it's the first day, I'm excited and wake up before the sun even fully rises. After getting dressed and having some snacks, I get going in the empty narrow streets of Sevilla. It's fairly warm for being early in the morning (around 16°C), which is a good start.
 
-After the central area, I follow the Guadalquivir old river out of the city, passing by the early joggers and dog walkers. This part is with lined with concrete pavers, which isn't totally ideal as they are a little loose, but fine for a while.
+After the central area, I follow the Guadalquivir old river out of the city, passing by the early joggers and dog walkers. This part of the road is lined with concrete pavers, which isn't totally ideal as they are a little loose, but at least they make a funny sound when I go over them.
 
 {% include image.html zoomable=true img="1-sevilla-water.jpg" alt="The path along the old Guadalquivir river in Sevilla in early morning light, with concrete pavers lining the waterway and trees along the banks." caption="Following the Guadalquivir river out of Sevilla in the early morning" %}
 
@@ -142,7 +142,7 @@ There are massive groups of vultures making use of the thermals to fly effortles
 
 {% include image.html zoomable=true img="2-photo-of-me.jpg" alt="A cyclist with their bike standing at a mountain viewpoint, with dramatic cliffs and valleys of the Sierra de Villuercas in the background under a blue sky." caption="Challenge completed: getting a stranger to take my photo at a Sierra de Villuercas viewpoint" %}
 
-Once the main mountain range is over and I enter the Castilla la Mancha region, I rejoin this same old train line. However, it's is now called the Via Verde de la Jara. It's technically closed according to the [website](https://viasverdes.com/itinerarios/la-jara/). I don't really see why they did that, as it's perfectly rideable, despite it mostly being broken asphalt and gravel. I guess you need to be careful of the potholes though. Again, this looks really beautiful here, with bridges and tunnels along the way to keep it all interesting.
+Once the main mountain range is over and I enter the Castilla la Mancha region, I rejoin this same old train line. However, it's now called the Via Verde de la Jara. It's technically closed according to the [website](https://viasverdes.com/itinerarios/la-jara/). I don't really see why they did that, as it's perfectly rideable, despite it mostly being broken asphalt and gravel. I guess you need to be careful of the potholes though. Again, this looks really beautiful here, with bridges and tunnels along the way to keep it all interesting.
 
 {% include image.html zoomable=true img="2-la-jara-path.jpg" alt="A gravel and broken asphalt path following an old train line through scenic countryside. The Via Verde de la Jara winds through hills with vegetation on both sides." caption="Following the Via Verde de la Jara: 30km of beautiful old train line" %}
 
@@ -160,11 +160,11 @@ Once that passes, it's a time for a pretty inconsistent 10km, 400 meter climb up
 
 Then comes a following big climb in two parts of 28km long and 700 meters up. The first part is quite stressfull as it's now completely dark and this is the one road that has no shoulder but very busy traffic. Later the road splits up and I'm no longer on the main direction to Madrid, so the traffic clears up. I am however getting a little stressed as I just found out I can only check in until 22h, which is currently after my ETA.
 
-<span class="challenge-achieved" data-challenge="7" title="Oh no - road closure"></span>I keep going, and push hard into the beautiful descent where I can see the lights of Madrid in the distance. Once I reach El Escorial, I know I'm getting closer. I have a quick and close look at this monastery as the road was blocked and I had to cross over the plaza that's surrounding the complex. But this also means that I still have to do the final climb up to the hospederia.
+<span class="challenge-achieved" data-challenge="7" title="Oh no - road closure"></span>I keep going, and push hard into the beautiful descent where I can see the lights of Madrid in the distance. Once I reach El Escorial, I know I'm getting closer. I have a quick look up close of this monastery as the road was blocked and I had to cross over the plaza that's surrounding the complex. But this also means that I still have to do the final climb up to the hospederia.
 
 {% include image.html zoomable=true img="2-madrid-view.jpg" alt="A panoramic night view of Madrid from a high vantage point, with city lights illuminating the urban landscape under a dark sky." caption="The lights of Madrid and El Escorial in the distance" %}
 
-I arrive at the base of the climb, which is also the entrance to the park at 21:09, which is a little earlier than I feared, but I'm not arrived yet. At this point I'm getting very anxious as I don't want to miss check-in time. I have to explain that I have a reservation to the guard, who doesn't really understand the spelling of my name or phone number (as I have no idea how to spell in Spanish). He does come out of his guard house and is a little letting me still do the climb up, which is still 5 kilometers and 300 meters of climbing, but I tell him I've already done 260 kilometers today, so I can handle this in 50 minutes. In the end I do make it in time, arriving as probably the last guest of the day at 21:40. Phew!
+I arrive at the base of the climb, which is also the entrance to the park at 21:09, which is a little earlier than I feared, but I'm not arrived yet. At this point I'm getting very anxious as I don't want to miss check-in time. I have to explain that I have a reservation to the guard, who doesn't really understand the spelling of my name or phone number (as I have no idea how to spell in Spanish). He does come out of his guard house and is a little apprehensive letting me still do the climb up, which is still 5 kilometers and 300 meters of climbing, but I tell him I've already done 260 kilometers today, so I can handle this in 50 minutes. In the end I do make it in time, arriving as probably the last guest of the day at 21:40. Phew!
 
 I'm staying at the Hospederia Santa Cruz, which is part of a very controversial place that requires some context. The Valle de Cuelgamuros is now a natural park, but it was originally built as a monument to the Spanish Civil War victory of Franco's forces. It includes a massive basilica (largest in the world, but cut in half to allow San Pietro in Vatican to stay the largest) and a huge cross (that one is the largest in the world, 120 meters) on top of the mountain, as well functioning as a gigantic mausoleum for the dictator Franco and José Antonio Primo de Rivera, the founder of the Falange party.
 
@@ -180,7 +180,7 @@ My room has a direct view of the cross, which is quite an imposing sight. After 
 
 {% include image.html zoomable=true img="2-cross.jpg" alt="The massive 120-meter cross of Valle de Cuelgamuros illuminated at night against a dark sky, creating a stark and imposing silhouette. The cross dominates the mountainous landscape." caption="The 120-meter cross at Valle de Cuelgamuros: an imposing view from my room" %}
 
-This second days was about 270 kilometers with 3600 meters of climbing. Quite a challenging day, but I'm glad I made it in time.
+This second day was about 270 kilometers with 3600 meters of climbing. Quite a challenging day, but I'm glad I made it in time.
 
 ## Day 3: Castilla y León {#pin-3}
 
@@ -197,7 +197,7 @@ This is the Puerto de Navacerrada, also featured as the second to last stage in 
 
 {% include image.html zoomable=true img="3-navacerrada.jpg" alt="The winding road up to Puerto de Navacerrada with mountain scenery. The climbing road cuts through mountainous terrain at high altitude." caption="Climbing to Puerto de Navacerrada: the highest point of the trip at 1850 meters" %}
 
-I manage this climb steadily and actually achieve it within an hour an a half without stopping. It isn't overly steep, but I haven't managed that with every climb so far so it's an achievement in a way. From this highest point, I'm also entering the Castilla y León region again, which I will be in for most of the day.
+I manage this climb steadily and actually achieve it within an hour and a half without stopping. It isn't overly steep, but I haven't managed that with every climb so far so it's an achievement in a way. From this highest point, I'm also entering the Castilla y León region again, which I will be in for most of the day.
 
 From there starts the longest downhill section of the trip, going down for around 80km. This includes a part of the route that was 50km without a single change in direction, which isn't an instruction I've seen on my GPS before. The views change from mountainous to a plateau which is at around 1000 meters above sea level. Here we start seeing a lot of the wine regions of Ribera del Duero, with fields of vines that now are mostly empty. It's fascinating to see how some still have the grapes, while others don't even have leaves anymore. You can also see the abandoned vines that grow just outside of the fields which are left to grow wild and become bushes.
 
@@ -226,7 +226,7 @@ The third day was about 230 kilometers with 2700 meters of climbing. A bit short
   <a target="_blank" rel="noopener noreferrer" class="strava-cta-button" href="https://strava.com/activities/16295371277" data-sp-click-id="activity_overview_cta">View on <svg height="10" width="45" class="strava-wordmark" style="margin-bottom:-1px;display:inline-block"><use href="#strava-wordmark" /></svg></a>
 </div>
 
-<span class="challenge-achieved" data-challenge="9" title="Find a souvenir"></span><span class="challenge-achieved" data-challenge="1" title="Learn a new phrase in Spanish"></span>In the morning I try to figure out how to get some post cards. I hadn't seen any around in shops or post offices, so I ask the owner of the hostal. It takes a while to explain as I have no idea how to say "post card" in Spanish, but eventually we get there. In the end I get some envelopes and paper, as well as an unexplained map of the area. I think that's because I said "carta", which means map in Spanish. By the way, for future reference, "post card" is "tarjeta postal" in Spanish.
+<span class="challenge-achieved" data-challenge="9" title="Find a souvenir"></span><span class="challenge-achieved" data-challenge="1" title="Learn a new phrase in Spanish"></span>In the morning I try to figure out how to get some post cards. I hadn't seen any around in shops or post offices, so I ask the owner of the hostal. It takes a while to explain as I have no idea how to say "post card" in Spanish, but eventually we get there. In the end I get some envelopes and paper, as well as an unexplained map of the area. I think that's because I said "carta", which means letter in Spanish. By the way, for future reference, "post card" is "tarjeta postal" in Spanish.
 
 It's a cold and foggy morning as I climb away to Neila and La Rioja. I'm actually getting quite worried that the fog will ruin my "post cards". I did not see them, but in this area there are many necropolises and burial sites from the middle ages. It would have been a quite steep detour, but at least now I know they exist.
 
@@ -277,7 +277,7 @@ Today I arrive and will finally see Abi again! The rain has cleared up, but it's
 
 {% include image.html zoomable=true img="5-gravel.jpg" alt="A gravel road going through a forest with steep walls on both sides and lots of fallen leaves" caption="Following the EuroVelo 1/3 gravel path" %}
 
-Going across a bridge, a car motions me to slow down, but I don't really understand why. Continuing on, a couple kilometers later I see what caused the warning, a tree has just fallen across the road. I wait a moment to ensure that it's safe to traverse, but once I see a group of cyclists (the first group I'm seeing in the entire trip) goign the other direction go underneath, I decide to go as well.
+Going across a bridge, a car motions me to slow down, but I don't really understand why. Continuing on, a couple kilometers later I see what caused the warning, a tree has just fallen across the road. I wait a moment to ensure that it's safe to traverse, but once I see a group of cyclists (the first group I'm seeing in the entire trip) going the other direction go underneath, I decide to go as well.
 
 {% include image.html zoomable=true img="5-fallen-tree.jpg" alt="A large tree fallen across a road, blocking the entire way" caption="Fallen tree across the road" %}
 
@@ -298,7 +298,7 @@ This shorter day was 80 kilometers with 1000 meters of climbing. An easy morning
 
 <span class="challenge-achieved" data-challenge="20" title="Eat a regional dish"></span>In the morning we head over to explore the city a bit more, visiting the famous La Viña restaurant for some lunch snacks and their famous cheesecake.
 
-<span class="challenge-achieved" data-challenge="28" title="Overtake Abi"></span>Of course, we don't live in Donostia, so we have to get back home as well. For this, Abi and I take the train from Donostia to Hendaye, and from there the TER To Bayonne. In the mean time, I try to beat her by going that same distance by bike. I manage to do these 57km in just over two hours, which is the just minutes slower than the train. She did of course have to wait in Hendaye for the connection, where I surprised her with a kiss, so I technically did overtake her!
+<span class="challenge-achieved" data-challenge="28" title="Overtake Abi"></span>Of course, we don't live in Donostia, so we have to get back home as well. For this, Abi and I take the train from Donostia to Hendaye, and from there the TER To Bayonne. In the mean time, I try to beat her by going that same distance by bike. I manage to do these 57km in just over two hours, which is just minutes slower than the train. She did of course have to wait in Hendaye for the connection, where I surprised her with a kiss, so I technically did overtake her!
 
 {% include image.html zoomable=true img="6-border.jpg" alt="Welcome sign to France in Hendaye" caption="Crossing the border in Hendaye" %}
 {% include image.html zoomable=true img="6-route-de-la-corniche.jpg" alt="A newly resurfaced road with orange markings. Bright sky overlooking the sea, the green country side and Saint-Jean-de-Luz" caption="Going down the scenic Route de la Corniche Basque" %}
@@ -362,7 +362,7 @@ Always be learning. You don't get opportunities every day to practice a hobby th
 
 Earlier this year I did the [Race Across Paris](https://www.raceacrossseries.com/race-across-paris-2025) event, which is a 1000 kilometer ride starting and ending in Chantilly, going in a figure eight around the north of the country. Doing this gave me the confidence to know that I can do long distances, but that riding overnight is not what I enjoy the most.
 
-Originally I had planned to do this ride in ultra-mode as well, without preplanned stops. However once I surveyed the route in detail, I realized that there are far less options for accomodation than I expected based on my experience in France. Because of this, I decided to book the hotels in advance, however I did not pay for to keep the plans flexible.
+Originally I had planned to do this ride in ultra-mode as well, without preplanned stops. However once I surveyed the route in detail, I realized that there are far less options for accomodation than I expected based on my experience in France. Because of this, I decided to book the hotels in advance, however I did not pay for them in advance to keep the plans flexible.
 
 Two weeks before the trip, I did a test ride, which I planned to do 777 kilometers at once, going to Dieppe, following the coast and returning south of the Seine. In many ways this was a complete disaster. My freehub stopped working basically right after starting, which means I couldn't coast, and the moment I stopped pedaling, the chain would fall off. I had to go back and find an alternative solution. I ended up going to many different stores to find a replacement wheel that day, getting a little stress that I wouldn't be able to do that test ride at all. In the end I managed to go to my regular bike store [La Roue Liber](https://laroueliber.fr), which did have one in stock. I swapped that wheel and went home, to give it another try on the saturday.
 
