@@ -66,6 +66,8 @@ My partner gave me some extra challenges to do during the trip, to make it more 
 29. Find an uncommon animal <span class="challenge-achieved" data-challenge-target="29"></span>
 30. See the ocean <span class="challenge-achieved" data-challenge-target="30"></span>
 
+<div data-section="pins-interaction-area-start"></div>
+
 ## Day 1: Sevilla to Extremadura {#pin-1}
 
 <div class="activity-graph">
@@ -299,6 +301,8 @@ This shorter day was 80 kilometers with 1000 meters of climbing. An easy morning
 
 <span class="challenge-achieved" data-challenge="27" title="Eat a regional cheese"></span>We walk around Bayonne a bit, have a drink and attempt to have dinner as well. Unfortunately, most restaurants only seem to open at 19h, which we think is too close to the train departure at 21h, so we just get some sandwiches with both local and Spanish delicacies. After that, it's the night train back to Paris, which arrives the next morning.
 
+<div data-section="pins-interaction-area-end"></div>
+
 ## The trip in numbers
 
 {% assign summary = site.data.diagonal.summary %}
@@ -483,7 +487,7 @@ svg text {
 {% raw %}
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('[id^="pin-"]');
+  const sections = document.querySelectorAll('h2[id^="pin-"]');
   const illustration = document.getElementById('pin-illustration');
   const sentinel = document.getElementById('illustration-sentinel');
   const svg = illustration.querySelector('svg');
@@ -564,57 +568,75 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          updateActivePin(entry.target.id);
-        }
-      });
-    },
-    {
-      root: null,
-      rootMargin: '-50% 0px -50% 0px',
-      threshold: 0,
-    }
-  );
-
-  sections.forEach((section) => observer.observe(section));
-
-  const viewportMiddle = window.innerHeight / 2;
-  let activeSection = null;
-
-  sections.forEach((section) => {
-    const rect = section.getBoundingClientRect();
-    const sectionTop = rect.top;
-    const sectionBottom = rect.bottom;
+  const getSectionVisibleHeight = (heading, nextHeading) => {
+    const viewportHeight = window.innerHeight;
+    const headingRect = heading.getBoundingClientRect();
     
-    if (sectionTop <= viewportMiddle && sectionBottom >= viewportMiddle) {
-      activeSection = section;
+    let sectionBottom;
+    if (nextHeading) {
+      sectionBottom = nextHeading.getBoundingClientRect().top;
+    } else {
+      sectionBottom = headingRect.bottom + 10000;
     }
-  });
+    
+    const sectionTop = headingRect.top;
+    
+    if (sectionBottom <= 0) return 0;
+    
+    if (sectionTop >= viewportHeight) return 0;
+    
+    const visibleTop = Math.max(0, sectionTop);
+    const visibleBottom = Math.min(viewportHeight, sectionBottom);
+    
+    return Math.max(0, visibleBottom - visibleTop);
+  };
 
-  if (!activeSection) {
-    let closestSection = null;
-    let closestDistance = Infinity;
+  const updateActivePinByVisibility = () => {
+    const viewportHeight = window.innerHeight;
+    const startMarker = document.querySelector('[data-section="pins-interaction-area-start"]');
+    const endMarker = document.querySelector('[data-section="pins-interaction-area-end"]');
+    
+    if (startMarker && startMarker.getBoundingClientRect().top > viewportHeight) {
+      svg.querySelectorAll('[id^="illustration-pin-"]').forEach((pin) => {
+        pin.classList.remove('active-pin');
+      });
+      return;
+    }
+    
+    if (endMarker && endMarker.getBoundingClientRect().bottom < 0) {
+      svg.querySelectorAll('[id^="illustration-pin-"]').forEach((pin) => {
+        pin.classList.remove('active-pin');
+      });
+      return;
+    }
+    
+    let mostVisibleSection = null;
+    let maxVisibleHeight = 0;
 
-    sections.forEach((section) => {
-      const rect = section.getBoundingClientRect();
-      const sectionMiddle = rect.top + rect.height / 2;
-      const distance = Math.abs(sectionMiddle - viewportMiddle);
-
-      if (distance < closestDistance) {
-        closestDistance = distance;
-        closestSection = section;
+    sections.forEach((section, index) => {
+      const nextSection = sections[index + 1];
+      const visibleHeight = getSectionVisibleHeight(section, nextSection);
+      if (visibleHeight > maxVisibleHeight) {
+        maxVisibleHeight = visibleHeight;
+        mostVisibleSection = section;
       }
     });
     
-    activeSection = closestSection;
-  }
+    if (mostVisibleSection) {
+      updateActivePin(mostVisibleSection.id);
+    }
+  };
 
-  if (activeSection) {
-    updateActivePin(activeSection.id);
-  }
+  let scrollTimeout;
+  window.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(updateActivePinByVisibility, 50);
+  }, { passive: true });
+
+  window.addEventListener('resize', updateActivePinByVisibility);
+  window.addEventListener('load', updateActivePinByVisibility);
+  
+  updateActivePinByVisibility();
 
   svg.querySelectorAll('[data-target]').forEach((pin) => {
     pin.style.cursor = 'pointer';
