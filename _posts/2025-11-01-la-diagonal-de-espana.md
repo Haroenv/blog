@@ -386,11 +386,6 @@ Overall, this was an amazing trip that I will remember for a long time. Cycling 
   h2 {
     margin-top: 4em;
   }
-  
-  /* Prevent horizontal scroll from sliding illustration */
-  html {
-    overflow-x: hidden;
-  }
 </style>
 
 <!-- strava -->
@@ -445,13 +440,13 @@ svg text {
   width: 20em;
   shape-outside: circle(50%);
   transform: translateX(0);
-  overflow: visible;
 }
 
 @media (min-width: 70em) {
   .floating-illustration-right {
     position: sticky;
     top: 1em;
+    width: calc((100vw - 1em - 56em) / 2);
   }
 }
 
@@ -497,6 +492,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!sections.length || !svg || !sentinel) {
     return;
   }
+
+  /* sliding illustration */
 
   const isLargeScreen = () => window.matchMedia('(min-width: 70em)').matches;
 
@@ -558,6 +555,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('resize', checkSentinel);
   window.addEventListener('scroll', checkSentinel, { once: true });
+
+  /* pins */
 
   const updateActivePin = (sectionId) => {
     svg.querySelectorAll('[id^="illustration-pin-"]').forEach((pin) => {
