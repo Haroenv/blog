@@ -66,12 +66,6 @@ My partner gave me some extra challenges to do during the trip, to make it more 
 29. Find an uncommon animal <span class="challenge-achieved" data-challenge-target="29"></span>
 30. See the ocean <span class="challenge-achieved" data-challenge-target="30"></span>
 
-<!-- NOTES:
-- twin town: Logroño with Dunfermline in Scotland
-- twin town: Barcelona with Antwerp in Belgium
-- twin town: Viana with La Brède in France (only one I saw a sign for)
-- twin town: Sevilla with Angers in France -->
-
 ## Day 1: Sevilla to Extremadura {#pin-1}
 
 <div class="activity-graph">
