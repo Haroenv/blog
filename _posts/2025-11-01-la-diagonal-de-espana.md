@@ -122,6 +122,8 @@ Once arrived in Guadalupe, I look at the monastery from the outside, as well as 
 
 {% include image.html zoomable=true img="2-guadalupe.jpg" alt="The monastery of Guadalupe with its imposing stone towers and gothic architecture, set against a hillside. The historic religious complex dominates the town with its fortress-like appearance." caption="The monastery of Guadalupe, home to the famous 'black mary' statue" %}
 
+It is from Guadalupe that many conquistadores set off to wreck havoc in the Americas. Hernán Cortés, Francisco Pizarro and Vasco Núñez de Balboa all made a stop here to pray before their expeditions. The monastery became very wealthy thanks to the treasures that were brought back from the New World. The name of the city likely comes from the Arabic "wadi al-lub", meaning "river of the wolf", but that's disputed.
+
 In the ride out of the town, I notice a sharp feeling in my shoe, and take out a little thorn without stopping. I don't know how it got there, but it's at least better to have a thorn in your shoe than in the tyre. The views here are stunning, with steep cliffs and rock formations all around.
 
 There are massive groups of vultures making use of the thermals to fly effortlessly high up. This is a really incredible sight, seeing dozens of them circling high up in the sky.
