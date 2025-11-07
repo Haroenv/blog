@@ -227,6 +227,7 @@
   /* Pan functionality - Touch */
   let initialDistance = 0;
   let initialScale = 1;
+  let wasPinching = false;
   
   zoomContainer.addEventListener('touchstart', (e) => {
     if (e.touches.length === 1) {
@@ -239,6 +240,7 @@
     } else if (e.touches.length === 2) {
       /* Two fingers - pinch zoom */
       isDragging = false;
+      wasPinching = true;
       const dx = e.touches[0].clientX - e.touches[1].clientX;
       const dy = e.touches[0].clientY - e.touches[1].clientY;
       initialDistance = Math.sqrt(dx * dx + dy * dy);
@@ -267,23 +269,8 @@
   zoomContainer.addEventListener('touchend', (e) => {
     if (e.touches.length === 0) {
       isDragging = false;
+      wasPinching = false;
     }
-  });
-  
-  /* Double tap to zoom on mobile */
-  let lastTap = 0;
-  zoomContainer.addEventListener('touchend', (e) => {
-    const currentTime = new Date().getTime();
-    const tapLength = currentTime - lastTap;
-    if (tapLength < 300 && tapLength > 0) {
-      if (scale === 1) {
-        scale = 2.5;
-      } else {
-        resetZoom();
-      }
-      updateTransform();
-    }
-    lastTap = currentTime;
   });
 })();
 </script>
