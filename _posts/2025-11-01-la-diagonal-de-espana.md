@@ -130,7 +130,7 @@ There are massive groups of vultures making use of the thermals to fly effortles
 
 <figure>
 <video controls style="max-width: 100%; height: auto;">
-  <source src="/img/posts/la-diagonal-de-espana/2-vultures.mov" type="video/quicktime">
+  <source src="/img/posts/la-diagonal-de-espana/2-vultures.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 <figcaption>Dozens of vultures soaring on thermals above the Sierra de Villuercas</figcaption>
